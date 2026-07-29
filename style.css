@@ -9,77 +9,95 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1a1a2e;
+  background: #e8f4fd;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .calculator {
-  background: #16213e;
-  border-radius: 28px;
-  padding: 28px;
-  width: 420px;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 32px;
+  width: 480px;
+  box-shadow: 0 30px 100px rgba(0, 119, 204, 0.15), 0 10px 30px rgba(0, 119, 204, 0.1);
+  border: 1px solid #d0e8f8;
 }
 
 .display {
-  background: #0f3460;
-  color: #e8e8e8;
-  font-size: 3.2rem;
-  font-weight: 300;
+  background: #f0f8ff;
+  color: #1a3c5e;
+  font-size: 3.5rem;
+  font-weight: 400;
   text-align: right;
-  padding: 28px 20px;
-  border-radius: 14px;
-  margin-bottom: 28px;
-  min-height: 100px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  min-height: 110px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  border: 2px solid #cce4f7;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 18px;
 }
 
 .btn {
-  background: #1a1a40;
-  color: #e8e8e8;
-  font-size: 1.8rem;
-  border: none;
-  border-radius: 16px;
-  padding: 24px 0;
+  background: #f0f8ff;
+  color: #1a3c5e;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 2px solid #d0e8f8;
+  border-radius: 18px;
+  padding: 28px 0;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
+  transition: all 0.2s ease;
 }
 
 .btn:hover {
-  background: #2a2a5e;
+  background: #e0f0fa;
+  border-color: #a8d0eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 119, 204, 0.15);
 }
 
 .btn:active {
-  transform: scale(0.95);
+  transform: scale(0.97);
 }
 
 .operator {
-  background: #0f3460;
-  color: #53d8fb;
+  background: #e8f4fd;
+  color: #0066cc;
+  border-color: #b8d8f8;
 }
 
 .operator:hover {
-  background: #1a4a8a;
+  background: #d0e8fa;
+  border-color: #8cc0eb;
+  color: #004499;
 }
 
 .clear {
-  color: #ff6b6b;
+  color: #e05050;
+  border-color: #f8c8c8;
+}
+
+.clear:hover {
+  background: #fff0f0;
+  border-color: #f0a0a0;
 }
 
 .equals {
-  background: #e94560;
+  background: #0077cc;
   color: white;
+  border-color: #0066b3;
 }
 
 .equals:hover {
-  background: #ff6b81;
+  background: #0066b3;
+  border-color: #005599;
+  color: white;
 }
 
 .zero {
