@@ -15,22 +15,22 @@ body {
 
 .calculator {
   background: #16213e;
-  border-radius: 20px;
-  padding: 20px;
-  width: 320px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 28px;
+  padding: 28px;
+  width: 420px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
 }
 
 .display {
   background: #0f3460;
   color: #e8e8e8;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 300;
   text-align: right;
-  padding: 20px 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  min-height: 80px;
+  padding: 28px 20px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  min-height: 100px;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -38,16 +38,16 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 16px;
 }
 
 .btn {
   background: #1a1a40;
   color: #e8e8e8;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   border: none;
-  border-radius: 12px;
-  padding: 18px 0;
+  border-radius: 16px;
+  padding: 24px 0;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
