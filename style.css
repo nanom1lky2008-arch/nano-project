@@ -17,7 +17,7 @@ body {
   background: #ffffff;
   border-radius: 32px;
   padding: 32px;
-  width: 480px;
+  width: 720px;
   box-shadow: 0 30px 100px rgba(0, 119, 204, 0.15), 0 10px 30px rgba(0, 119, 204, 0.1);
   border: 1px solid #d0e8f8;
 }
@@ -39,8 +39,8 @@ body {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
 }
 
 .btn {
@@ -98,10 +98,6 @@ body {
   background: #0066b3;
   border-color: #005599;
   color: white;
-}
-
-.zero {
-  grid-column: span 2;
 }
 
 .func {
