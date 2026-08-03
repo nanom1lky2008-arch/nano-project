@@ -99,3 +99,14 @@ body {
 .equals:hover {
   background: #ff9ab3;
 }
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #ffe8b8;
+  font-size: 0.75rem;
+  color: #b88a6a;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
