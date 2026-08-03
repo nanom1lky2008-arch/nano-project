@@ -21,6 +21,31 @@ body {
   box-shadow: 0 20px 60px rgba(255, 200, 150, 0.3);
 }
 
+.lace {
+  height: 18px;
+  margin: -24px -24px 16px;
+  border-radius: 32px 32px 0 0;
+  background: radial-gradient(circle at 10px 10px, transparent 8px, #fff 9px) 0 0,
+              radial-gradient(circle at 30px 10px, transparent 8px, #fff 9px) 20px 0,
+              radial-gradient(circle at 50px 10px, transparent 8px, #fff 9px) 40px 0,
+              radial-gradient(circle at 70px 10px, transparent 8px, #fff 9px) 60px 0,
+              radial-gradient(circle at 90px 10px, transparent 8px, #fff 9px) 80px 0,
+              radial-gradient(circle at 110px 10px, transparent 8px, #fff 9px) 100px 0,
+              radial-gradient(circle at 130px 10px, transparent 8px, #fff 9px) 120px 0,
+              radial-gradient(circle at 150px 10px, transparent 8px, #fff 9px) 140px 0,
+              radial-gradient(circle at 170px 10px, transparent 8px, #fff 9px) 160px 0,
+              radial-gradient(circle at 190px 10px, transparent 8px, #fff 9px) 180px 0,
+              radial-gradient(circle at 210px 10px, transparent 8px, #fff 9px) 200px 0,
+              radial-gradient(circle at 230px 10px, transparent 8px, #fff 9px) 220px 0,
+              radial-gradient(circle at 250px 10px, transparent 8px, #fff 9px) 240px 0,
+              radial-gradient(circle at 270px 10px, transparent 8px, #fff 9px) 260px 0,
+              radial-gradient(circle at 290px 10px, transparent 8px, #fff 9px) 280px 0,
+              radial-gradient(circle at 310px 10px, transparent 8px, #fff 9px) 300px 0;
+  background-size: 20px 18px;
+  background-color: #fff5ec;
+  border-bottom: 2px dashed #ffd9b3;
+}
+
 .display {
   color: #8b6b4a;
   font-size: 4.5rem;
