@@ -124,12 +124,3 @@ body {
 .equals:hover {
   background: #ff9ab3;
 }
-
-.credit {
-  margin-top: 20px;
-  text-align: center;
-  color: #b85c7a;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
