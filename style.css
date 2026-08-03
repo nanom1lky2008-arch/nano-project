@@ -41,24 +41,13 @@ body {
 
 .btn {
   border: none;
+  border-radius: 50%;
   font-size: 2rem;
   font-weight: 400;
   cursor: pointer;
   aspect-ratio: 1;
   transition: all 0.15s;
   min-width: 0;
-  clip-path: polygon(
-    50% 0%,
-    61% 15%,
-    98% 35%,
-    68% 23%,
-    79% 62%,
-    50% 45%,
-    21% 62%,
-    32% 23%,
-    2% 35%,
-    39% 15%
-  );
   box-shadow: 0 4px 12px rgba(255, 180, 150, 0.2);
 }
 
@@ -69,21 +58,8 @@ body {
 
 .zero {
   grid-column: span 2;
+  border-radius: 80px;
   aspect-ratio: 2.1;
-  clip-path: polygon(
-    25% 0%,
-    33% 15%,
-    60% 0%,
-    68% 15%,
-    100% 10%,
-    100% 90%,
-    68% 85%,
-    60% 100%,
-    33% 100%,
-    25% 85%,
-    0% 90%,
-    0% 10%
-  );
   text-align: left;
   padding-left: 28px;
 }
