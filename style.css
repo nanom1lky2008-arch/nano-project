@@ -103,3 +103,16 @@ body {
 .zero {
   grid-column: span 2;
 }
+
+.func {
+  background: #e8f4fd;
+  color: #0055aa;
+  border-color: #b8d8f8;
+  font-size: 1.6rem;
+}
+
+.func:hover {
+  background: #d0e8fa;
+  border-color: #8cc0eb;
+  color: #003d7a;
+}

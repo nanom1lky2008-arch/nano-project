@@ -41,11 +41,31 @@ function calculate() {
     case '*': result = prev * curr; break;
     case '/': result = curr === 0 ? 'Error' : prev / curr; break;
     case '%': result = prev % curr; break;
+    case '^': result = Math.pow(prev, curr); break;
     default: return;
   }
   currentInput = result.toString();
   operator = null;
   previousInput = '';
+  shouldResetDisplay = true;
+  updateDisplay();
+}
+
+function applyFunction(func) {
+  const val = parseFloat(currentInput);
+  if (isNaN(val)) return;
+  let result;
+  switch (func) {
+    case 'sin': result = Math.sin(val); break;
+    case 'cos': result = Math.cos(val); break;
+    case 'tan': result = Math.tan(val); break;
+    case 'log': result = val <= 0 ? 'Error' : Math.log10(val); break;
+    case 'ln': result = val <= 0 ? 'Error' : Math.log(val); break;
+    case '√': result = val < 0 ? 'Error' : Math.sqrt(val); break;
+    case 'π': result = Math.PI; break;
+    default: return;
+  }
+  currentInput = result.toString();
   shouldResetDisplay = true;
   updateDisplay();
 }
@@ -71,7 +91,7 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
   const value = btn.dataset.value;
   if (!isNaN(value) || value === '.') {
     appendNumber(value);
-  } else if ('+-*/%'.includes(value)) {
+  } else if ('+-*/%^'.includes(value)) {
     chooseOperator(value);
   } else if (value === '=') {
     calculate();
@@ -79,5 +99,7 @@ document.querySelector('.buttons').addEventListener('click', (e) => {
     clearAll();
   } else if (value === '±') {
     toggleSign();
+  } else if (['sin', 'cos', 'tan', 'log', 'ln', '√', 'π'].includes(value)) {
+    applyFunction(value);
   }
 });
