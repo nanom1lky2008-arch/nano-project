@@ -9,106 +9,89 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #e8f4fd;
+  background: #000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .calculator {
-  background: #ffffff;
-  border-radius: 32px;
-  padding: 32px;
-  width: 720px;
-  box-shadow: 0 30px 100px rgba(0, 119, 204, 0.15), 0 10px 30px rgba(0, 119, 204, 0.1);
-  border: 1px solid #d0e8f8;
+  background: #000;
+  border-radius: 0;
+  padding: 20px;
+  width: 340px;
 }
 
 .display {
-  background: #f0f8ff;
-  color: #1a3c5e;
-  font-size: 3.5rem;
-  font-weight: 400;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 200;
   text-align: right;
-  padding: 32px 24px;
-  border-radius: 16px;
-  margin-bottom: 32px;
-  min-height: 110px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  border: 2px solid #cce4f7;
+  padding: 40px 24px 20px;
+  min-height: 150px;
+  letter-spacing: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .btn {
-  background: #f0f8ff;
-  color: #1a3c5e;
+  border: none;
+  border-radius: 50%;
   font-size: 2rem;
-  font-weight: 500;
-  border: 2px solid #d0e8f8;
-  border-radius: 18px;
-  padding: 28px 0;
+  font-weight: 400;
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.btn:hover {
-  background: #e0f0fa;
-  border-color: #a8d0eb;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 119, 204, 0.15);
+  aspect-ratio: 1;
+  transition: background 0.15s;
+  min-width: 0;
 }
 
 .btn:active {
-  transform: scale(0.97);
+  opacity: 0.7;
 }
 
-.operator {
-  background: #e8f4fd;
-  color: #0066cc;
-  border-color: #b8d8f8;
+.num {
+  background: #333;
+  color: #fff;
 }
 
-.operator:hover {
-  background: #d0e8fa;
-  border-color: #8cc0eb;
-  color: #004499;
+.num:hover {
+  background: #4a4a4a;
 }
 
-.clear {
-  color: #e05050;
-  border-color: #f8c8c8;
-}
-
-.clear:hover {
-  background: #fff0f0;
-  border-color: #f0a0a0;
-}
-
-.equals {
-  background: #0077cc;
-  color: white;
-  border-color: #0066b3;
-}
-
-.equals:hover {
-  background: #0066b3;
-  border-color: #005599;
-  color: white;
+.zero {
+  grid-column: span 2;
+  border-radius: 80px;
+  aspect-ratio: 2.1;
+  text-align: left;
+  padding-left: 28px;
 }
 
 .func {
-  background: #e8f4fd;
-  color: #0055aa;
-  border-color: #b8d8f8;
-  font-size: 1.6rem;
+  background: #a5a5a5;
+  color: #000;
 }
 
 .func:hover {
-  background: #d0e8fa;
-  border-color: #8cc0eb;
-  color: #003d7a;
+  background: #d4d4d4;
+}
+
+.operator {
+  background: #ff9f0a;
+  color: #fff;
+}
+
+.operator:hover {
+  background: #cc7700;
+}
+
+.equals {
+  background: #ff9f0a;
+}
+
+.equals:hover {
+  background: #cc7700;
 }
