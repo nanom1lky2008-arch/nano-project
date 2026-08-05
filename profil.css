@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff8e7;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 24px;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 32px;
+  padding: 36px 28px;
+  box-shadow: 0 20px 60px rgba(255, 200, 150, 0.3);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135°, #ffd97d 0%, #ffb3c6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 8px 24px rgba(255, 180, 150, 0.4);
+}
+
+.avatar-initial {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #8b6b4a;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #b85c7a;
+  font-weight: 500;
+}
+
+.profile-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd9b3, transparent);
+  margin: 24px 0;
+  border-radius: 1px;
+}
+
+.profile-section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8b6b4a;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px dashed #ffd9b3;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #6b5b4a;
+  text-align: justify;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-item {
+  background: #fffaf0;
+  border-radius: 16px;
+  padding: 14px 16px;
+  border: 1px solid #ffe8b8;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b85c7a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 0.9rem;
+  color: #8b6b4a;
+  font-weight: 500;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff3d6;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #ffe8b8;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+
+.contact-link {
+  font-size: 1.05rem;
+  color: #8b6b4a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #b85c7a;
+}
+
+.profile-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px dashed #ffd9b3;
+}
+
+.profile-footer p {
+  font-size: 0.8rem;
+  color: #b85c7a;
+  font-weight: 500;
+}
